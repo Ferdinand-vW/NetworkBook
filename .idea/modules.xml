@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/NetworkBook.iml" filepath="$PROJECT_DIR$/.idea/NetworkBook.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/network.iml" filepath="$PROJECT_DIR$/.idea/network.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/network2.iml" filepath="$PROJECT_DIR$/.idea/network2.iml" />
     </modules>
