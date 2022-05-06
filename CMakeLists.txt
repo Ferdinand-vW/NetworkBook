@@ -7,3 +7,5 @@ add_executable(chapter2
         ch2.cpp)
 
 add_executable(chapter3 ch3.cpp)
+
+add_executable(chapter5 ch5.cpp)
