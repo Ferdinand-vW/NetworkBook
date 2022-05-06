@@ -9,3 +9,7 @@ add_executable(chapter2
 add_executable(chapter3 ch3.cpp)
 
 add_executable(chapter5 ch5.cpp)
+
+add_executable(ch6_client ch6_client.cpp)
+
+add_executable(ch6_server ch6_server.cpp)
