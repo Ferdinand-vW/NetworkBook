@@ -6,6 +6,7 @@
 #include <netdb.h>
 #include <arpa/inet.h>
 #include <unistd.h>
+#include <cstdio>
 
 int main() {
 
@@ -32,9 +33,12 @@ int main() {
     listen(sock,1);
 
     struct sockaddr_storage their_addr;
-    int new_fd = accept(sock,(struct sockaddr *)&their_addr,&sizeof their_addr);
+    socklen_t  sockSize = sizeof their_addr;
+    int new_fd = accept(sock,(struct sockaddr *)&their_addr,&sockSize);
     char buf[100];
-    recv(new_fd,buf,sizeof buf,0);
+    int n = recv(new_fd,buf,sizeof buf,0);
+
+    printf("Server received: '%s'",buf);
 
     close(new_fd);
     close(sock);
